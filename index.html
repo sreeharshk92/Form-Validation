@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-12345" crossorigin="anonymous" />
+    
+
+    <style>
+        body {
+          background-image: url('images/background.jpg');
+          background-size: cover;
+          background-position: center;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    </style>
+</head>
+<body>
+                <div class="container">
+                    <div class="form-container">
+
+                            <form>
+
+                                <h1>Register</h1>
+
+                                    <div class="title"><h4>Name</h4>
+                                        <label id="namevalid">Valid</label>
+                                    </div>
+                                        <input id="name" type="text" required maxlength="30">
+                                        <label id="nameinvalid">Invalid name,please enter alphabetic characters and be at least 3 characters long.</label>
+
+                                    <div class="title"><h4>Email</h4>
+                                        <label id="emailvalid">Valid</label>
+                                    </div>
+                                        <input id="email" type="email" required maxlength="30">
+                                        <label id="emailinvalid">*Invalid e-mail,please enter a valid e-mail format.</label>
+                                    
+
+                                    <div class="title"><h4>Password</h4>
+                                        <label id="passvalid">Valid</label>
+                                    </div>
+                                        <input id="pass" type="password" required maxlength="30">
+                                        <label id="passinvalid">*Invalid,enter atleast 8 characters,one uppercase,lowercase,one special characters.</label>
+                                       
+
+                                     <div class="title"><h4>Confirm-password</h4>
+                                        <label id="confpassvalid">Valid</label>
+                                    </div>
+                                        <input id="confpass" type="password" required maxlength="30">
+                                        <label id="confpassinvalid">*Invalid,this password does not match with password field</label>
+                                      
+
+                                    <div class="title"><h4>Phone</h4>
+                                        <label id="phonevalid">Valid</label>
+                                    </div>
+                                        <input id="phone" type="text" required maxlength="10">
+                                        <label id="phoneinvalid">*Invalid number,need 10 valid numbers</label>
+                                     
+
+                                    <div class="title"><h4>Date of Birth</h4>
+                                        <label id="dobvalid">Valid</label>
+                                    </div>
+                                        <input id="dob" placeholder="Date of Birth" type="date" >
+                                        <label id="dobinvalid">*Invalid date of birth,not accept future dates</label>
+               
+                                    <button id="submitbutton"  type="button">Submit</button>
+    
+                                    <div id="count"></div>
+
+                            </form>
+                    </div>
+                </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

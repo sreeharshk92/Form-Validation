@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 0 2rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    padding: 25px 40px;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid 5px;
+    background-color: black;
+    
+}
+
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: rgb(154, 211, 192);
+}
+
+/*<<<<<< FORM BOX STYLES>>>>>>>*/
+input{
+    background-color: rgb(154, 211, 192);
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+input:hover{
+    background-color:  rgb(105, 157, 140);
+}
+
+#nameinvalid , #phoneinvalid , #passinvalid , #emailinvalid , #confpassinvalid , #dobinvalid , #forminvalid , #formvalid{
+    font-size: 12px;
+    font-family: sans-serif;
+    color: red;
+    visibility: hidden;
+}
+
+#namevalid , #phonevalid , #passvalid , #emailvalid , #confpassvalid , #dobvalid , #formvalid{
+    font-size: 14px;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(232, 241, 178);
+    visibility: hidden;
+
+}
+
+.title h4{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+button{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 900;
+    padding: .3rem;
+    width: 100%;
+    background-color: darkcyan;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    
+}
+button:hover{
+    background-color: rgb(51, 118, 118);
+}
+
+#count{
+    color: white;
+}
+
+
